@@ -1,4 +1,4 @@
-FROM node:16-alpine as strapi4-fresh
+FROM node:18-alpine as strapi4-fresh
 # Installing libvips-dev for sharp Compatability
 RUN apk update && apk add bash
 # RUN apk update && apk add  build-base gcc autoconf automake zlib-dev libpng-dev nasm  vips-dev
