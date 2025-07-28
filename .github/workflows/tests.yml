@@ -41,7 +41,7 @@ jobs:
 
       # https://github.com/marketplace/actions/publish-docker
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@v4
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: jclaveau/${{ matrix.published-container }}
           username: ${{ secrets.DOCKER_USERNAME }}
