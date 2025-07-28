@@ -12,7 +12,7 @@ jobs:
         #  - strapi4-strapi-unit-front-tests-ctn # fail due to sqlite3 install
         #  - strapi4-strapi-unit-back-tests-ctn
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Build the stack
         run: docker-compose build ${{ matrix.test-container }}
@@ -31,7 +31,7 @@ jobs:
         #  - strapi4-deps-heroku
          - strapi4-quasar2-deps-heroku
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Build the stack
         run: docker-compose build ${{ matrix.published-container }}-ctn
